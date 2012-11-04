@@ -1,6 +1,6 @@
 # Octopress Themes - Venice Theme
 
-![Octopress Venice Theme thumbnail](https://s3.amazonaws.com/static.liangzan.net/venice-thumbnail.png)
+![Octopress Venice Theme thumbnail](https://s3.amazonaws.com/static.octopressthemes.com/thumbnails/venice-thumbnail.png)
 
 Venice theme is a theme hand made for Octopress blogging framework. It is compatible with Octopress 2. Updates will be provided from this repository.
 
