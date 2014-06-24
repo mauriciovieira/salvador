@@ -1,8 +1,8 @@
-# Octopress Themes - Venice Theme
+# Octopress Themes - Salvador Theme
 
-![Octopress Venice Theme thumbnail](https://s3.amazonaws.com/static.octopressthemes.com/thumbnails/venice-thumbnail.png)
+![Octopress Salvador Theme thumbnail]()
 
-Venice theme is a theme hand made for Octopress blogging framework. It is compatible with Octopress 2. Updates will be provided from this repository.
+Salvador theme is a theme hand made for Octopress blogging framework. It is compatible with Octopress 2. Updates will be provided from this repository.
 
 ## Installation
 
@@ -10,54 +10,54 @@ You can choose to install as a Git submodule. Or you can download as a zip archi
 
 ### Install as Git submodule
 
-These instructions will create a git submodule under the __.themes/venice__ directory. From your blog directory, run these commands.
+These instructions will create a git submodule under the __.themes/salvador__ directory. From your blog directory, run these commands.
 
 ``` sh
-git submodule add git://github.com/octothemes/venice.git .themes/venice
+git submodule add git://github.com/mauriciovieira/salvador.git .themes/salvador
 ```
 
 You should then commit the changes.
 
 ``` sh
 git add .themes
-git commit -m "added venice theme"
+git commit -m "added salvador theme"
 ```
 
-Next, you should apply the theme to your blog and generate the stylesheets. Follow the [install instructions](#applying-the-venice-theme-to-your-blog).
+Next, you should apply the theme to your blog and generate the stylesheets. Follow the [install instructions](#applying-the-salvador-theme-to-your-blog).
 
 ### Install from downloaded zip archive
 
-If you are more comfortable with just the theme files, you can download our zip archives from [S3](https://s3.amazonaws.com/static.octopressthemes.com/themes/venice-v0.1.0.zip).
+If you are more comfortable with just the theme files, you can download our zip archives from [my website](https://download.mauriciovieira.net/themes/salvador-v0.1.0.zip).
 
 1. Once you have downloaded the package, uncompress the archive.
 2. Go to your Octopress blog's directory. There should be a hidden directory called __.themes__.
-3. Your theme should be a single directory called __venice__ containing the theme files. Copy the __venice__ directory to the __.themes__ directory on your Octopress blog's directory.
+3. Your theme should be a single directory called __salvador__ containing the theme files. Copy the __salvador__ directory to the __.themes__ directory on your Octopress blog's directory.
 
-Next, you should apply the theme to your blog and generate the stylesheets. Follow the [install instructions](#applying-the-venice-theme-to-your-blog).
+Next, you should apply the theme to your blog and generate the stylesheets. Follow the [install instructions](#applying-the-salvador-theme-to-your-blog).
 
 ## Updating the theme
 
 ### With Git submodules
 
-From your Octopress blog's directory, assuming your theme directory is called __venice__.
+From your Octopress blog's directory, assuming your theme directory is called __salvador__.
 
 ``` sh
-cd .themes/venice
+cd .themes/salvador
 git pull origin master
 ```
 
-Next, you should apply the theme to your blog and generate the stylesheets. Follow the [install instructions](#applying-the-venice-theme-to-your-blog).
+Next, you should apply the theme to your blog and generate the stylesheets. Follow the [install instructions](#applying-the-salvador-theme-to-your-blog).
 
 ### With downloaded packages
 
 It is largely similar to the install process. We want to overwrite the theme with the new files. Lastly, to run install to apply the changes.
 
-1. Download the new packages from [S3](https://s3.amazonaws.com/static.octopressthemes.com/themes/venice-v0.1.0.zip).
+1. Download the new packages from [my website](https://download.mauriciovieira.net/themes/salvador-v0.1.0.zip).
 2. Once you have downloaded the package, uncompress the archive.
 3. Go to your Octopress blog's directory. There should be a hidden directory called __.themes__.
-4. Your downloaded files should be a single directory called __venice__ containing the theme files. Copy the __venice__ directory to the __.themes__ directory on your Octopress blog's directory.
+4. Your downloaded files should be a single directory called __salvador__ containing the theme files. Copy the __salvador__ directory to the __.themes__ directory on your Octopress blog's directory.
 
-Next, you should apply the theme to your blog and generate the stylesheets. Follow the [install instructions](#applying-the-venice-theme-to-your-blog).
+Next, you should apply the theme to your blog and generate the stylesheets. Follow the [install instructions](#applying-the-salvador-theme-to-your-blog).
 
 ## Removing the theme
 
@@ -67,37 +67,37 @@ From your Octopress blog's directory,
 
 Remove the theme entry from the __.gitmodules__ file. The entry should look like this:
 ```
-[submodule ".themes/venice"]
-  path = .themes/venice
-  url = https://github.com/octothemes/venice.git
+[submodule ".themes/salvador"]
+  path = .themes/salvador
+  url = https://github.com/mauriciovieira/salvador.git
 ```
 
 Remove the theme from the __.git/config__ file. The entry should look like this:
 ```
-[submodule ".themes/venice"]
-  url = https://github.com/octothemes/venice.git
+[submodule ".themes/salvador"]
+  url = https://github.com/mauriciovieira/salvador.git
 ```
 
 Remove the theme files with Git.
 ``` sh
-git rm  --cached .themes/venice
+git rm  --cached .themes/salvador
 ```
 
-Your files should be removed. If you want to go back to using the default theme, follow the [Octopress default theme install instructions](#applying-the-venice-theme-to-your-blog).
+Your files should be removed. If you want to go back to using the default theme, follow the [Octopress default theme install instructions](#applying-the-salvador-theme-to-your-blog).
 
 ### If you installed as a download package
 
 From your Octopress blog's directory,
 
-1. Remove the __venice__ directory from __.themes/venice__.
-2. Follow the [Octopress default theme install instructions](#applying-the-venicetheme-to-your-blog).
+1. Remove the __salvador__ directory from __.themes/salvador__.
+2. Follow the [Octopress default theme install instructions](#applying-the-salvadortheme-to-your-blog).
 
-## Applying the venice theme to your blog
+## Applying the salvador theme to your blog
 
 Follow this set of instructions whenever you made a new install or update to your themes.
 
 ``` sh
-rake install[venice]
+rake install[salvador]
 rake generate
 ```
 
@@ -140,9 +140,7 @@ Should you have any problems, raise an issue on this repository.
 
 ## Note
 
-[Octopress themes](http://octopressthemes.com) is not affiliated with the official Octopress project.
-
-A link to [Octopress themes](http://octopressthemes.com) has been added to the footer. You can remove it if you want to.
+This theme was based on the [Venice Octopress Theme](https://github.com/octothemes/venice).
 
 ## Other themes
 
@@ -150,4 +148,4 @@ More themes are available on [Octopress themes](http://octopressthemes.com). Fee
 
 ## License
 
-Copyright &copy; 2012. Wong Liang Zan. MIT License
+Copyright &copy; 2014. Mauricio Vieira. MIT License
